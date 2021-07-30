@@ -1,0 +1,19 @@
+{
+  "name": "lambda-environment",
+  "version": "1.0.0",
+  "description": "Testando o uso de diversos ambientes no aws lambda",
+  "main": "handler.js",
+  "scripts": {
+    "test": "sls invoke local -f commit-message-scheduler --stage qa --log",
+    "prod": "sls invoke local -f commit-message-scheduler --stage prod --log"
+  },
+  "author": "Rodrigo W. Ferreira",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.952.0",
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.10",
+    "env-var": "^7.0.1",
+    "tslib": "^2.3.0"
+  }
+}
